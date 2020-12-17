@@ -1,0 +1,390 @@
+/* index page css */
+@import url();
+*{
+	padding: 0;
+	margin: 0; 
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+html{
+	font-size: 30px;
+	overflow: scroll;
+}
+a{
+	text-decoration: none;
+}
+footer{
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	padding: 15px;
+	background-color: #f2f2fc;
+	line-height: 45px;
+	border-top: 1px solid #e8dfec;
+}
+.container{
+	min-height:100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+body{
+	margin: 0;
+	line-height: 1.5;
+	background-color: #f2f2fc;
+}
+
+#hero {
+	background-image: url("lander.jpg");
+	background-color: gray;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	position:relative;
+	z-index: 1;
+}
+
+#hero::after{
+	content: '';
+	position: absolute;
+	left: 0; 
+	top: 0;
+	height: 0;
+	width: 100%;
+	background-color: black;
+	opacity: .7; 
+	z-index: -1;
+}
+#hero .hero{
+	max-width: 1500px;
+	margin: 0 auto;
+;	
+}
+#hero h1{
+	display: block;
+	width: fit-content;
+	font-size: 4rem;
+	position: relative;
+	color: white;
+}
+#hero .cta{
+	display: inline-block;
+	padding: 10px 15pc;
+	color: crimson	;
+	background-color: transparent;
+	border: 2px solid crimson;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 15px;
+	margin-top: 30px;
+	transition: .3s ease;
+	transition-property: background-color, color; 
+}
+#hero .cta:hover{
+	color: white;
+	background-color: crimson;
+}
+
+/* model page css */
+.section{
+	background-color: #f2f2fc;
+	min-height: 100vh;
+	display: block;
+}
+.main-content{
+	padding-left:270px;
+}
+.aside{
+	width: 270px;
+	background-color: #fdf9ff;
+	position: fixed;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	border-right:1px solid #e8dfec;
+}
+.aside .nav{
+	margin: 80px;
+}
+.aside .nav li a{
+	display:block;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 45px;
+	display: block;
+	border-bottom:1px solid #e8dfec;
+	color: crimson;
+}
+.aside .nav li a:hover{
+	padding-left: 5px;
+}
+.header{
+	width: 100%;
+	height: 80px;
+	display: block;
+	background-color: f2f2fc;
+	line-height: 45px;
+	border-bottom: 1px solid #e8dfec;
+}
+.header p{
+	text-align: center;
+	color: crimson;
+	font-size: 50px;
+}
+.header img{
+	float: left;
+}
+.moon{
+	margin: 10px auto;
+	width: 1000px;
+	
+}
+video {
+	width: 98%;	
+}
+.spaceship{
+	display: block;
+	margin: 10px auto;
+	width: 1000px
+}
+.spaceship img{
+	width: 32%;
+}
+.moon{
+	display: block;
+	position: inline;
+}
+h1{
+	width: fit-content;
+	font-size: 4rem;
+	color: crimson;
+}
+.favela{
+	display: block;
+	margin: 10px auto;
+	width: 1000px;
+}
+.buildings{
+	display: block;
+	margin: 10px auto;
+	width: 1000px;
+}
+.WBC{
+	display: block;
+	margin: 10px auto;
+	width: 1000px;
+}
+.soylentgreen{
+	display: block;
+	margin: 10px auto;
+	width: 1000px;
+}
+.soylent{
+	display: block;
+	margin: 10px auto;
+	width: 1000px;
+	justify-content: center;
+}
+
+/* about page */
+.information{
+	display: block;
+	margin: auto;
+	width: 1000px;
+}
+.information p{
+	color: black;
+	font-size: 15px;
+	float: right;
+	margin: 5px auto;
+}
+.softwares{
+
+}
+.photoshop{
+	width: 1000px;
+	margin: 10px auto;
+}
+.photoshop input:hover{
+	height: 200px;
+	width: 300px;
+}
+.after_effects{
+	width: 1000px;
+	margin: 10px auto;
+}
+.after_effects input:hover{
+	height: 200px;
+	width: 300px;
+}
+.maya{
+	width: 1000px;
+	margin: 10px auto;
+}
+.maya input:hover{
+	height: 200px;
+	width: 300px;
+}
+
+/* photoshop page*/
+.backgrounds{
+	width: 1000px;
+	margin: 10px auto;
+	display: block;
+}
+.backgrounds h2{
+	font-size: 2rem;
+	width: fit-content;
+	color: crimson;
+}
+.backgrounds p{
+	font-size: 17px;
+	color: crimson;
+}
+.backgrounds_slideshow{
+	max-width: 1000px;
+	position: relative;
+	margin: 10px auto;
+}
+.mySlides{
+	display: none;
+}
+.previous, .next{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+.next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.previous:hover, .next:hover{
+	background-color: rgba(0,0,0,0.8)
+}
+.text{
+	color: white;
+	font-size: 15px;
+	padding: 10px 15px;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+.numbertext{
+	color: white;
+	font-size: 15px;
+	padding: 10px 15px;
+	position: absolute;
+	top: 0;
+}
+.dot{
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+	background-color: grey;
+}
+.fade{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+	from {opacity: .4}
+	to {opacity: 1 }
+}
+@keyframes fade{
+	from {opacity: .4}
+	to {opacity: 1}
+}
+.textures{
+	margin: 10px auto;
+	width: 1000px;
+	display: block;
+}
+.textures h2{
+	font-size: 2rem;
+	width: fit-content;
+	color: crimson;
+}
+.textures p{
+	font-size: 17px;
+	color: crimson;
+}
+.designs{
+	margin: 10px auto;
+	width: 1000px;
+	display: block;
+}
+.designs h2{
+	font-size: 2rem;
+	width: 1000px;
+	color: crimson;
+}
+.designs p{
+	font-size: 17px;
+	color: crimson;
+}
+
+/* after_effects */
+.walk_cycles{
+	margin: 10px auto;
+	width: 1000px;
+	display: block;
+}
+.walk_cycles h2{
+	font-size: 2rem;
+	width: 1000px;
+	color: crimson;
+	float: left;
+}
+.walk_cycles p{
+	font-size: 17px;
+	color: crimson;
+}
+.walk_cycles video{
+	margin: 10px auto;
+	display: block;
+	width: 1000px;
+}
+.work_experience{
+	margin: 10px auto;
+	width: 1000px;
+	display: block;
+}
+.work_experience h2{
+	font-size: 2rem;
+	width: 1000px;
+	color: crimson;
+}
+.work_experience p{
+	font-size: 17px;
+	color: crimson;
+}
+.work_experience video{
+	margin: 10px auto;
+	display: block;
+	width: 1000px;
+}
